@@ -29,6 +29,7 @@ subprocess.call(['mkdir', 'build'])
 subprocess.call(['cd', 'build'])
 subprocess.call(['cmake', '..', '-DETHASHCUDA=ON', '-DETHASHCL=OFF'])
 subprocess.call(['make'])
+
 Step 3: Configure Additional Settings for Optimal Performance
 Configure additional settings for optimal performance, such as tuning the miner parameters or optimizing the mining pool configuration. This may involve adjusting parameters such as threads, stride, and intensity based on testing and experimentation. You can use Python scripting to automate this process as well. Here's an example Python script to set the number of threads used by the CUDA miner:
 
